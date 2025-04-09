@@ -1,6 +1,6 @@
 <?php 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer;
+use PHPMailer\Exception;
 
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
@@ -34,15 +34,15 @@ if (isset($_POST['name'])    &&
 	    $mail->Host = 'smtp.gmail.com'; 
 	    $mail->SMTPAuth   = true;
 	    //Your Email
-	    $mail->Username= '';
-	    //App password
-	    $mail->Password = ''; 
+	    $mail->Username= 'sweetheart2261999@gmail.com';
+	    //google App password
+	    $mail->Password = 'dksv vvuc wuch wkrr'; 
 	    $mail->SMTPSecure = "ssl";          
 	    $mail->Port       = 465;                                  
 	    //Recipients
 	    $mail->setFrom($email, $name);   
 	    // your Email
-	    $mail->addAddress(''); 
+	    $mail->addAddress('sourab.halder.in@gmail.com'); 
 
 	    //Content
 	    $mail->isHTML(true);                             
